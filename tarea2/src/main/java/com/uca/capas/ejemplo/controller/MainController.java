@@ -10,7 +10,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController {
-	
+
+	@RequestMapping("/alumno")
+	public @ResponseBody String ejemplo() {
+		return 	"Nombre : Cristian Mauricio" + "\n" +
+				"Apellido : Alfaro Contreras" + "\n" +
+				"Carnet : 00167917" + "\n"+ 
+				"Carrera : Ingeniería Informática" + "\n"+
+				"Año : 4°" + "\n";
+		
+	}
+
 	@RequestMapping("/parametro")
 	public @ResponseBody String parametro(HttpServletRequest request, HttpServletRequest request2, HttpServletRequest request3) {
 		Integer param = Integer.parseInt(request.getParameter("dia"));
@@ -42,14 +52,4 @@ public class MainController {
 		return "El dia de la semana es   "+dia;
 	}
 	
-	@RequestMapping("/alumno")
-	public @ResponseBody String ejemplo() {
-		return "Nombre : Luis Eduardo" + "\n"+
-			   "Apellido : Cortez Murillo" + "\n"+
-			   "Carnet : 00029117" + "\n"+
-			   "Carrera : Ingeniería Informática" + "\n"+
-			   "Año : 4to" + "\n";
-		
-	}
-
 }
