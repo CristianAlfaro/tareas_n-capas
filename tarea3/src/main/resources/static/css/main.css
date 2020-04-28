@@ -22,10 +22,6 @@
 
 
 
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
-
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -37,7 +33,6 @@ body, html {
 	font-family: Poppins-Regular, sans-serif;
 }
 
-/*---------------------------------------------*/
 a {
 	font-family: Poppins-Regular;
 	font-size: 14px;
@@ -59,7 +54,6 @@ a:hover {
 	color: #ffffff;
 }
 
-/*---------------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
@@ -77,8 +71,15 @@ ul, li {
 	list-style-type: none;
 }
 
+table {
+	text-align: center;
+    width: 100%;
+}
 
-/*---------------------------------------------*/
+td {
+	color: white;
+}
+
 input {
 	outline: none;
 	border: none;

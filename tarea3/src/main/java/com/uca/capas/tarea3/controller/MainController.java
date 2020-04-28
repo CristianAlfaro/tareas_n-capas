@@ -16,12 +16,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MainController {
 	
-	@RequestMapping("/index")
+	@RequestMapping("/ingresar")
 	public String index() {
 		return "index";
 	}
 
-	@RequestMapping("/parametros")
+	@RequestMapping("/exito")
 	public ModelAndView parametros1(HttpServletRequest request) throws ParseException {
 		List<String> lista_errores = new ArrayList<>();
 				
